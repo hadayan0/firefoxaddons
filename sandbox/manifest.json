@@ -1,0 +1,28 @@
+{
+
+	"manifest_version": 2,
+	"name": "sandbox",
+	"version": "0.1",
+
+	"description": "おすなば",
+	"homepage_url": "http://hadayan0.dip.jp/",
+	"icons": {
+		"48": "icons/48.png"
+	},
+
+	"permissions": [
+		"activeTab",
+		"tabs"
+	],
+
+	"background": {
+		"scripts": ["background/bg-script.js"]
+	},
+
+	"commands": {
+		"toggle-feature": {
+			"suggested_key": { "default": "Ctrl+Shift+U" },
+			"description": "Send a 'toggle-feature' event to the extension"
+		}
+	}
+}
